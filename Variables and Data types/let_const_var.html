@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 1. Var can be redeclared and updated 
+    var name="Prashanta";
+    console.log(name);
+    var name="Prashanta Parajuli";
+    console.log(name);
+
+// 2. Let cannot be redeclared but updated
+    let name="Prashanta";
+    console.log(name);
+    // let name="Prashanta Parajuli";
+    console.log(name);
+
+    //Throws Error But can, 
+
+    let age= 24;
+    console.log(age);
+    age=25;
+    console.log(age);
+    
+
+// 3. Const cannot be redeclared or updated
+const PI = 3.14;
+console.log(PI); 
+
+
+// #...... Block Scope and Global Scope ......#
+
+//this is block 1 
+let a= 10;
+console.log(a);
+{
+    //this is block 2
+    let a=20;
+    console.log(a);
+}
+
+//so let is a block scope variable
+</script> 
+</html>

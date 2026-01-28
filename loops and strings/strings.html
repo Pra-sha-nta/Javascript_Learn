@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let str = "Prashanta Parajuli";
+    //length
+    console.log("length of string is",str.length);
+
+    //index
+    console.log("index of P is",str.indexOf("P"));
+    
+    console.log("index of h is",str.indexOf("h"));
+    console.log("index of t is",str.indexOf("t"));
+
+    console.log(str[0]," is at index 0");
+    console.log(str[1]," is at index 1");
+
+
+    //special string using back ticks
+    //this is called template literals
+    let specialstring=`Prashanta Parajuli`;
+    console.log(specialstring);
+
+    //typeof
+    console.log(typeof str);
+    console.log(typeof specialstring);
+
+
+let object={
+    item: "phone",
+    price: 5000,
+    color: "black"
+};
+
+console.log("the cost of",object.item,"is",object.price, "rupees");
+console.log("the color of",object.item,"is",object.color);
+
+//this is so difficult to print
+//so we use template literals
+
+let output = `the cost of ${object.item} is ${object.price} rupees and the color is ${object.color}`;
+console.log(output);
+
+
+</script>
+</html>

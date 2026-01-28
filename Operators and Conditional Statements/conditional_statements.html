@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // # ..... Conditional Statements in JS ......#
+    // 1. If-Else
+
+    let a = 10;
+    let b = 5;
+    if (a > b) {
+        console.log("a is greater than b");
+    } else {
+        console.log("b is greater than a");
+    }
+
+    //odd and even
+    let c = 10;
+    if (c % 2 == 0) {
+        console.log("c is even");
+    } else {
+        console.log("c is odd");
+    }
+
+    //2. Else-If
+
+    let d = 10;
+    let e = 5;
+    if (d > e) {
+        console.log("d is greater than e");
+    } else if (d < e) {
+        console.log("e is greater than d");
+    } else {
+        console.log("d and e are equal");
+    }
+
+    //3. Ternary Operator
+
+    let f = 10;
+    let g = 5;
+    let result = f > g ? "f is greater than g" : "g is greater than f";
+    console.log(result);
+
+    //4. Switch Case
+
+    let h = 10;
+    switch (h) {
+        case 1:
+            console.log("h is 1");
+            break;
+        case 2:
+            console.log("h is 2");
+            break;
+        case 3:
+            console.log("h is 3");
+            break;
+        default:
+            console.log("h is not 1, 2 or 3");
+            break;
+    }
+    
+</script>
+</html>

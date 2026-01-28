@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h3>Q1: Prompt the user to enter their full name. Generate a username for them based on the input. start with @, followed by their name and ending with the full name length</h3>   
+</body>
+<script>
+    let name = prompt("Enter your name");
+    let refined_name = name.trim().toLowerCase();
+    console.log("REfined name is ",refined_name);
+
+
+    let username = "@" + refined_name + refined_name.length;
+    console.log("Username Is ",username);
+
+</script>
+</html>

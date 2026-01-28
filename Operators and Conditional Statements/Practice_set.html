@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Q1: Get user to input using prompr and check if number is multiple of 5 or not</h2> 
+    <h2>Q2: Write a code which can give grades to students according to their marks</h2>
+</body>
+<script>
+    // let a = prompt("Enter a number");
+    // if (a % 5 == 0) {
+    //     console.log(a,"is multiple of 5");
+    // } else {
+    //     console.log(a, "is not multiple of 5");
+    // }
+
+    // let score= prompt("Enter your score");
+    // if (score >= 90) {
+    //     console.log("Your grade is A");
+    // } else if (score >= 80) {
+    //     console.log("Your grade is B");
+    // } else if (score >= 70) {
+    //     console.log("Your grade is C");
+    // } else if (score >= 60) {
+    //     console.log("Your grade is D");
+    // } else {
+    //     console.log("Your grade is F");
+    // }
+    //using switch
+    let marks= prompt("Enter your marks");
+    switch(true){
+        case (marks<100):
+            console.log("Your grade is A");
+            break;
+        case (marks>=80):
+            console.log("Your grade is B");
+            break;
+        case (marks>=70):
+            console.log("Your grade is C");
+            break;
+        case (marks>=60):
+            console.log("Your grade is D");
+            break;
+        default:
+            console.log("Your grade is F");
+    }
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //.........# string methods in js #.......... ]
+//upper and lower case
+    let str="   prashanta parajuli         js ";
+    console.log("In UpperCase",str.toUpperCase());
+    console.log("In LowerCase",str.toLowerCase());
+    uppercase= str.toUpperCase();
+    console.log(uppercase);
+
+//trim
+    console.log("trim",str.trim());
+    console.log("trim start",str.trimStart());
+    console.log("trim end",str.trimEnd());
+
+    let slice = "Prashanta Parajuli";
+    console.log(slice.slice(0,5));
+    console.log(slice.slice(10,18));
+    console.log(slice.slice(6));
+    console.log(slice.slice(-4));
+    console.log(slice.slice(-15));
+
+//concat
+    let name="Prashanta";
+    let lastname="Parajuli";
+    let fullname=name.concat(" "+ lastname);
+    console.log(fullname);
+
+    let str1="Prashanta";
+    let str2="Parajuli";
+    console.log(str1+" "+str2);
+
+//replace
+    let str3="Prashanta Parajuli";
+    console.log(str3.replace("Parajuli","New Surname"));
+    console.log(str3.replace("Prashanta","Very New Name"));
+    console.log(str3.replace("a","-"));
+    console.log(str3.replaceAll("a","-"));
+
+//charAt
+let str4="Prashanta Parajuli";
+console.log(str4.charAt(0));
+console.log(str4.charAt(10));
+console.log(str4.charAt(-1)); //nothing
+
+
+//startsWith and endsWith
+let str5="Prashanta Parajuli";
+console.log(str5.startsWith("Prashanta"));
+console.log(str5.endsWith("Parajuli"));
+
+//includes
+let str6="Hey my name is as you know !";
+console.log(str6.includes("is"));
+console.log(str6.includes("s y"));
+console.log(str6.includes("an"));
+</script>
+</html>

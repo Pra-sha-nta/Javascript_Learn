@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // #.....Loops in JS.....#
+    // 1. For Loop
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+
+    let sum = 0;
+    for ( i=0;i<=5;i++){
+        sum=sum+i;
+console.log(sum);
+    }
+    console.log("Final sum of 1 to ",i-1,"is",sum);
+
+
+
+
+    // 2. While Loop
+    let j=0;
+    while (j<5) {
+        console.log(j);
+        j++;
+    }
+
+    // 3. Do-While Loop
+    //runs at least once
+    let k=0;
+    do{
+        console.log(k);
+        k++;
+    }while(k<5);
+ //4. For-Of Loop
+    let name="Prashanta Parajuli";
+    for (let char of name) {
+        console.log(char);
+    }
+
+    //calculate string length
+    let names="Prashanta Parajuli";
+    let count=0;
+    for (let char of names) {
+        count++;
+    }
+    console.log("Length of string is",count);
+
+//5. For-In Loop
+    let person={
+        name:"Prashanta",
+        age:24,
+        gender:"Male"
+    }
+    for (let key in person) {
+        console.log(key,":",person[key]);
+    }
+
+</script>
+</html>
