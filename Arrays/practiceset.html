@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // create an array to store companies => bloomberg,microsoft, uber, google, ibm , netflix
+    let companies = ["bloomberg", "microsoft", "uber", "google", "ibm", "netflix"];
+
+    // a. remove the first compant from array
+    companies.shift();
+    console.log(companies);
+
+    // b. remove the last company from array
+    companies.pop();
+    console.log(companies);
+
+    // c. remove uber and add ola in its place
+    companies.splice(2, 1, "ola");
+    console.log(companies);
+    
+    // d. add amazon at the end of the array
+    companies.push("amazon");
+    console.log(companies);
+</script>
+</html>

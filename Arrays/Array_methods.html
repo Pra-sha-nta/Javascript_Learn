@@ -34,7 +34,7 @@
     let arr3 = arr.concat(arr2);
     console.log(arr3); //1,2,3,4,5,6,7,8,9,10
 
-    //5. join : Converts array into string
+    //5. join : Joins the elements of the array
     let str1 = arr.join("-");
     console.log(str1); //1-2-3-4-5-6-7
 
@@ -64,6 +64,11 @@
 
     arr.splice(1, 2, "hello", 88);
     console.log(arr); //7,hello,2,1
+
+    //add without deleting 
+    arr.splice(1, 0, "hello", 88);
+    console.log(arr); //7,hello,88,hello,2,1
+    //this deletes 0 elements at index 1 and inserts hello and 88
 
 
 
