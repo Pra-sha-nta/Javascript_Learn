@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    // #....... Attribute Manipulation.........#
+
+    <div id="box" name="box_name">
+        This is a Div
+    </div>
+    <p class="para">This is a Paragraph</p>
+</body>
+<script>
+
+    // 1. getAttribute
+    let div = document.querySelector("div").getAttribute("id");
+    console.log(div);
+
+    let name = document.querySelector("div").getAttribute("name");
+    console.log(name);
+
+    let para = document.querySelector("p").getAttribute("class");
+    console.log(para);
+
+    //2. setAttribute
+    document.querySelector("div").setAttribute("id", "box_id");
+    document.querySelector("div").setAttribute("name", "box_namesss");
+    document.querySelector("p").setAttribute("class", "para_class");
+
+</script>
+
+</html>

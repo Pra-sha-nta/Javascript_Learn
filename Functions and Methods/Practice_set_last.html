@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //filter out marks of students greater than 90
+
+    let arr = [85, 97, 44, 37, 76, 60];
+
+    let filteredArray = arr.filter((val) => {
+        return val > 90;
+    })
+
+    console.log(filteredArray);
+
+    // Take a number n as input . creatr an array of number from 1 to n ;
+
+    let num = prompt("Enter a number");
+    let newArr = [];
+    for (let i = 1; i <= num; i++) {
+        newArr.push(i);
+    }
+
+    //use reduce method to calsulate sum of all numbers in array
+
+    let sum = newArr.reduce((acc, curr) => {
+        return acc + curr
+    });
+    console.log(sum);
+
+    //use reduce method to calsulate product of all numbers in array
+
+    let factorial = newArr.reduce((acc, curr) => {
+        return acc * curr
+    });
+    console.log(factorial);
+</script>
+
+</html>

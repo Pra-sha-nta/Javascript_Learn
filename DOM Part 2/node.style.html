@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        This is a box
+    </div>
+</body>
+<script>
+    let box = document.querySelector("#box");
+    console.log(box.style);
+    box.style.backgroundColor = "magenta";
+    box.style.color = "black";
+    box.style.width = "300px";
+    box.style.height = "300px";
+    box.style.fontSize = "20px";
+    box.style.fontWeight = "bold";
+    box.style.visibility = "visible";
+
+</script>
+
+</html>

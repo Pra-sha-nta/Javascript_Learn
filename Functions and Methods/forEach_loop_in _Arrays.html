@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // function sum(a, b) {
+    //     console.log("SUM", a + b);
+    // }
+    // function diff(a, b) {
+    //     console.log("Diff", a - b);
+    // }
+    // function calculator(sum, diff) {
+    //     sum(10, 5);
+    //     diff(10, 5);
+    // }
+
+
+    // #.......To see we can pass Function as parameter to another Function .......#
+    function sum(a, b) {
+        return a + b;
+    }
+    function diff(a, b) {
+        return a - b;
+    }
+    function calculator(sum, diff) {
+        console.log("Sum is", sum(10, 5));
+        console.log("Diff is", diff(10, 5));
+    }
+    calculator(sum, diff);
+
+
+    //  #.......For Each Loop in Arrays......#  
+    let arr = [1, 2, 3, 4, 5];
+    arr.forEach(function (element) {
+        console.log(element);
+    });
+
+    // using arrow function
+    let arr2 = [1, 2, 3, 4, 5];
+    arr2.forEach((element) => {
+        console.log(element.toString());
+
+    });
+    console.log(typeof arr2);
+    console.log(arr2.length);
+
+    // passing value,index and array in forEach loop
+    let arr3 = [1, 2, 3, 4, 5];
+    arr3.forEach((element, index, array) => {
+        console.log(element, index, array);
+    });
+
+    //practice problem : Print Square of each value using forEach loop
+    console.log("Print Square of each value using forEach loop");
+    let arr4 = [1, 2, 3, 4, 5];
+    arr4.forEach(element => {
+        console.log(element * element);
+    });
+
+
+    console.log("Print Square of each value using forEach loop");
+    let arr5 = [1, 2, 3, 4, 5];
+    const calcSquare = (element) => {
+        console.log(element * element);
+    };
+    arr5.forEach(calcSquare);
+</script>
+
+
+
+
+
+
+
+M
+
+</html>

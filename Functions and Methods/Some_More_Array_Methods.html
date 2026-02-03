@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //#..... Some More Array Methods.....#//
+
+    // 1. MAP
+    console.log("MAP");
+
+    let nums = [1, 2, 3, 4, 5];
+
+    let newArr = nums.map((val) => {
+        return val * 2;
+    });
+    console.log(newArr);
+
+    // 2. FILTER
+    console.log("FILTER");
+
+    let newFilter = nums.filter((val) => {
+        return val % 2 == 0;
+    });
+    console.log(newFilter);
+
+    // 3. REDUCE
+    console.log("REDUCE");
+    let arr = [1, 2, 3, 4, 5];
+    let arr2 = arr.reduce((res, curr) => {
+        return res + curr;
+    });
+    console.log(arr2);
+
+    console.log("Finding largest number");
+    let largest = arr.reduce((res, curr) => {
+        if (res > curr) {
+            return res;
+        } else {
+            return curr;
+        }
+    });
+    console.log(largest);
+
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+#heading {
+    color: blue;
+    font-size: 40px;
+    background-color: yellow;
+}
+
+.Class_name {
+    color: red;
+    font-size: 30px;
+}
+
+p {
+    color: black;
+    font-size: 30px;
+}
+
+body {
+    background-color: pink;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            margin: 10px;
+            border: 2px solid black;
+            text-align: center;
+            align-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hello Javascript</h2>
+    <div class="box">First Div</div>
+    <div class="box">Second Div</div>
+    <div class="box">Third Div</div>
+</body>
+
+<script>
+    let text = document.querySelectorAll(".box");
+    console.log(text);
+    text[0].innerText += " From Prashanta";
+    text[1].innerText += " From Prashanta";
+    text[2].innerText += " From Prashanta";
+
+    //background color
+    text[0].style.backgroundColor = "yellow";
+    text[1].style.backgroundColor = "blue";
+    text[2].style.backgroundColor = "green";
+
+</script>
+
+</html>
