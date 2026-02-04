@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 2px solid black;
+            text-align: center;
+            align-content: center;
+        }
+
+        /* div:hover {
+            background-color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <div onmouseover="console.log('Donot Click')">
+        This is a div
+    </div>
+
+    <button id="btn1">Click Me</button>
+</body>
+<script>
+    let btn1 = document.querySelector("#btn1");
+
+    btn1.onclick = (evt) => {
+        console.log("Donot Click");
+
+        console.log(evt);
+        console.log(evt.clientX, evt.clientY);
+        console.log(evt.type);
+        console.log(evt.target);
+
+    }
+
+    let div = document.querySelector("div");
+    div.onmouseover = (div_hover) => {
+        console.log("You are Hovering on Div");
+        console.log(div_hover.clientX, div_hover.clientY);
+    }
+</script>
+
+</html>

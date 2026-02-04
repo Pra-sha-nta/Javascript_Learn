@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            color: red;
+        }
+
+        .newclass {
+            background-color: green;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="content">I am a Paragraph</p>
+</body>
+<script>
+    // Question 1
+
+    let button = document.createElement("button");
+    button.innerText = "Click Me!";
+    let body = document.querySelector("body");
+    body.appendChild(button);
+    console.log(button);
+    button.style.backgroundColor = "red";
+    button.style.color = "white";
+
+    // Question 2
+    let p = document.querySelector("p");
+    console.log(p.getAttribute("class"));
+
+    // p.setAttribute("class", "newclass");
+    p.classList.add("newclass");
+    console.log(p.classList);
+    console.log(p.getAttribute("class"));
+
+</script>
+
+</html>

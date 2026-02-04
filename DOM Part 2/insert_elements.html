@@ -18,6 +18,38 @@
     let div = document.createElement("div");
     div.innerText = "This is a div";
     console.log(div);
+
+    // 2. appendChild
+    let body = document.querySelector("body");
+    body.appendChild(div);
+
+    let button = document.createElement("button");
+    button.innerText = "Click Me!";
+    div.appendChild(button);
+
+    let p = document.createElement("p");
+    p.innerText = "This is a paragraph";
+    div.appendChild(p);
+
+    let h1 = document.createElement("h1");
+    h1.innerText = "This is a heading";
+    div.append(h1);
+
+    // // Removing using removeChild
+    // let parent = document.querySelector("div");
+    // parent.removeChild(h1);
+
+    // //removing all child elements
+    // // let parents = document.querySelector("div");
+    // // parents.remove();
+
+    //replacing elements
+    let para = document.querySelector("p");
+    let h2 = document.createElement("h2");
+    h2.innerText = "This is a heading";
+    div.append(h2);
+    para.replaceWith(h2);
+
 </script>
 
 </html>
