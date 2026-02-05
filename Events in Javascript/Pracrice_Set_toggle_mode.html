@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark {
+
+            background-color: black;
+            color: white;
+        }
+
+        .light {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="mode">Change Mode</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut placeat mollitia id tempora rerum, minima ad labore
+        deleniti voluptatem molestias vel! Perferendis mollitia quo corrupti nobis molestias, molestiae obcaecati
+        tenetur?</p>
+</body>
+<script>
+    let modebtn = document.querySelector("#mode");
+    let currentMode = "light";
+
+    modebtn.addEventListener("click", () => {
+        if (currentMode == "light") {
+            currentMode = "dark";
+            document.querySelector("body").classList.add("dark");
+            document.querySelector("body").classList.remove("light");
+        }
+        else {
+            currentMode = "light";
+            document.querySelector("body").classList.add("light");
+            document.querySelector("body").classList.remove("dark");
+        }
+        console.log(currentMode);
+
+    })
+</script>
+
+</html>

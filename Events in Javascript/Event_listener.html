@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>
+        Click Me
+    </button>
+</body>
+<script>
+    let bt1 = document.querySelector("button");
+    bt1.addEventListener("click", () => {
+        console.log("Button CLicked Handler -1");
+
+    })
+
+    bt1.addEventListener("click", () => {
+        console.log("Button CLicked Handler -2");
+
+    })
+
+    bt1.addEventListener("click", () => {
+        console.log("Button CLicked Handler -3");
+
+    })
+
+    bt1.addEventListener("click", () => {
+        console.log("Button CLicked Handler -4");
+
+    })
+
+    // bt1.removeEventListener("click", () => {
+    //     console.log("Button CLicked Handler -3");
+    // })  
+
+    // ---> This doesnot remove the event listener because it is not the same event listener as it has different location in memory
+    //--> So we need to match the call back reference
+
+    const handler5 = () => {
+        console.log("Button CLicked Handler -5");
+    }
+    bt1.addEventListener("click", handler5);
+    bt1.removeEventListener("click", handler5);
+</script>
+
+</html>
